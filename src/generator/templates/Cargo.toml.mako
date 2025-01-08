@@ -47,7 +47,7 @@ tokio = { version = "1", features = ["full"] }
 % endif
 url = "2"
 utoipa = { version = "4", optional = true }
-yup-oauth2 = { version = "11", optional = true }
+yup-oauth2 = { git = "https://github.com/sean-purcell/yup-oauth2", branch = "noninteractive-authenticator", optional = true }
 
 google-apis-common = { path = "../../google-apis-common", version = "7" }
 % if cargo.get('is_executable'):
